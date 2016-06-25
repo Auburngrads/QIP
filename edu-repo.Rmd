@@ -1,0 +1,70 @@
+---
+title: "Creating a Content Repository for Graduate Education"
+subtitle: 'stuff'
+author: "Jason K Freels"
+date: "`r format(Sys.Date(), '%d %b %Y')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+The value the content contributed to an educational repository can be determined by several factors
+
+1) Limitations imposed by the enclosing environment
+
+2) Logistic requirements to ensure faculty can create, update and integrate the content
+
+3) 
+
+3) How easily the content can be updated
+
+2) How easily the content can be integrated by other faculty
+
+Types of content
+
+A key consideration when determining the value of some content is the 'enclosing environment'
+
+- The enclosing environment takes 
+
+    + Video
+
+Many options exist to store and share materials used for education.  However, little thought appears to have been put into that material can be used.  This paper investigates ways to create stuff and how this relates to faculty development.
+
+- Free-form repository
+
+- Structured repository
+
+The most important component is what can be done with the content 
+
+In a free-form repository users can contribute content in any format.  While free form repositories this simplifies really easy to contribute, but it can make it more difficult for other members to   the The result of their choosing any can 
+What is the 
+
+- Stovepiping
+
+- Types of Content
+
+- Editable/pass along to others
+
+- How easy is it to integrate 'pulled content' into your content
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

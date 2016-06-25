@@ -1,0 +1,88 @@
+---
+title: "External Discovery Data Gathering"
+output: pdf_document
+date: "June 17, 2016"
+subtitle: Initial Offsite Meeting Notes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Identify organizations & literature to gather data
+<hr/>
+
+## Universities
+
+- Local schools - <u>__assigned to Geyer & Koeppel__</u>
+
+    + OSU
+
+    + Rose-Huhlman
+
+    + WSU,UD
+
+    + IUPUI
+
+- Peer Institutions - <u>__assigned to Fritchman__</u>
+
+    + DAU
+
+    + Service Academies
+
+    + ALU
+
+    + ORSAMAC (Ft. Meade)
+
+- Other Institutions - <u>__assigned to Freels__</u>
+
+    + Harvey-Mudd
+
+    + MIT
+
+    + Khan Academy
+
+    + Corporate Universities (Walgreen's/FedEx)
+
+- Literature Review - <u>__assigned to Merkle & Koeppel__</u>
+
+## Conferences
+
+\newpage
+
+# Focus Areas To Investigate
+<hr/>
+
+## Criteria
+
+- What areas represent are the most needed improvements for AFIT?
+
+- What ideas would be the most cross-cutting across LS/EN/CE?
+
+- What ideas facilitate integrating content/expertise across LS/EN/CE? 
+
+    + Create & manage repositories containing content that all three schools can draw from?
+
+    + Organizational structures to facilitate integrating, executive, advanced, research, and certification programs?
+
++ Which universities have continuous education branches?
+
++ What impact could the 21<sup>st</sup> Century classroom have (base on results/studies)
+
++ Educational design that incorporates both distance and resident classrooms (ensure both experiences are as close as possible)
+
++ Blended designs that best communicate the multiple types of content 
+
+    + Course content
+
+    + Coding skills
+
+- IT infrastructure issues
+
+    + How do NPS and the Service Academies manage their IT issues?
+
+    + How do CI schools manage IT issues? (specifically risk mgmt.)
+
+    + What tools/services to CI schools rely on for communicating/content sharing? Can we use them? (Dropbox, GitHub)
+
+
