@@ -1,0 +1,55 @@
+---
+title: 'Distance Learning: Issues and Best Practices'
+author: "Jason K Freels, PhD"
+date: '`format(Sys.Date(), ''%d %b %Y'')`'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitcitations)
+```
+
+## [Huffington Post](http://www.huffingtonpost.com/beth-rubin/online-classes-higher-education_b_2616446.html)
+
+Another innovator is my own university, DePaul. In the online program at the School for New Learning, faculty work together with instructional designers to build online courses. Instead of watching hours of videos, students apply concepts — they may prepare an argument for a judge or design a training program. Professors are paid to develop courses, which become like textbooks — resources that can be re-used. Professors’ rights are protected by contract; the work is theirs, but others can teach it for a period of time. The course author gets additional compensation if more students learn from the class. Rich online discussions allow students to get to know one another, share ideas and develop deeper learning about real-world issues such as, “Should you take out a fixed rate mortgage or a variable one?” or “What is this piece of art worth?” Instructors guide, support and give feedback to students so they can develop higher order skills and complete the courses.
+
+## [NPR](http://www.npr.org/2013/12/31/258420151/the-online-education-revolution-drifts-off-course)
+
+But if 2012 was the "Year of the MOOC," as The New York Times [famously called it](http://www.nytimes.com/2012/11/04/education/edlife/massive-open-online-courses-are-multiplying-at-a-rapid-pace.html?_r=0), 2013 might be dubbed the year that online education fell back to earth. Faculty at several institutions rebelled against the rapid expansion of online learning — and the nation's largest MOOC providers are responding.
+
+Earlier this year, San Jose State University partnered with Udacity to offer several types of for-credit MOOC classes at low cost. The partnership was announced in January with lots of enthusiastic publicity, including a plug from California Gov. Jerry Brown, who said MOOC experiments are central to democratizing education.
+
+But by all accounts, the San Jose experiment was a bust. Completion rates and grades were worse than for those who took traditional campus-style classes. And the students who did best weren't the underserved students San Jose most wanted to reach.
+
+It wasn't really proving to be cheaper, either, says Peter Hadreas, the chairman of San Jose State's philosophy department.
+
+"The people that do well in these kind of courses are people who are already studious. Or ... who are taking courses for their own enrichment after they've graduated," he says.
+
+Now, San Jose State is scaling back its relationship with Udacity, taking more direct control of the courses it offers through the company and rethinking its commitment to MOOCs.
+
+'We Have A Lousy Product'
+
+Other schools are hitting the pause button as well. A recent [University of Pennsylvania study](http://www.gse.upenn.edu/pdf/ahead/perna_ruby_boruch_moocs_dec2013.pdf) confirmed a massive problem: MOOCs have painfully few active users. About half who registered for a class ever viewed a lecture, and completion rates averaged just 4 percent across all courses.
+
+Sebastian Thrun, Udacity's co-founder and a prime mover in MOOCs, [recently told Fast Company magazine](http://www.fastcompany.com/3021473/udacity-sebastian-thrun-uphill-climb), "We were on the front pages of newspapers and magazines, and at the same time, I was realizing, we don't educate people as others wished, or as I wished. We have a lousy product."
+
+"Online education that leaves almost everybody behind except for highly motivated students, to me, can't be a viable path to education. We look back at our early work and realize it wasn't quite as good as it should have been. We had so many moments for improvement."
+
+That the former Stanford professor and inventor — whose online artificial intelligence course helped kick off the MOOC frenzy — was fundamentally rethinking its viability shook the higher education world.
+
+What was missing, many students complained, was a human connection beyond the streamed lecture.
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
