@@ -1,0 +1,75 @@
+---
+title: "EDUCAUSE - Thursday"
+author: "Jason K Freels"
+date: "October 27, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Overall Take-Aways
+
+EDUCAUSE in an organization supporting the community of IT professionals in higher education - and their customers (students, faculty, and staff).  Given that this community is the audience for the EDUCAUSE conference it is unsurprising that 'Big Data' and 'Data Analytics' are major themes running through the sessions and the vendor exhibits.  
+
+EDUCAUSE is a BIG conference, with an attendance of over 5000 and offering more than 30 concurrent session during each interval.  The size of the conference size became a detriment to my experience.  Because so many sessions are offerred during each window, presenters don't provide much detail as to what they will be presenting so as to cast a wider net of attendees.  In nearly every session I attended, 10-20% of the attendees left once the details of the presentation became more clear. 
+
+A second take-away is that when it comes to implementing tech in the classroom, there is currently too many choices available.  For this reason many institutions seem to be 'winging-it'.  In one presentation NC State discussed the tech innovations made in their Hunt Library.  While the result has been very successful, the speaker acknowledged that many of their decisions would eventually become restrictions as considerations for tech refresh would need to be made.
+
+In _Session Title_ speakers from across the Univ of California system detailed their issues with providing an integrated set of tools for 'simple' services such as email, calendering, and file sharing and storage.  
+
+## AFIT is behind the power curve WRT evaluating and implementing tech 
+
+I was initially unsure about wearing my uniform at EDUCAUSE. But, sticking out like a sore thumb allowed me to connect with representatives from The Air Force Academy (USAFA), Naval Postgraduate School (NPS), West Point and Air University (AU).
+
+As example, I had a great impromptu conversation with Patricia Hirsch, (Director, Contracting & Logistics Management, NPS), Matthew White (Contracting Specialist, NPS), and Anthony __can't remember last name__ (Center for Teaching and Learning, AU).  The NPS representatives stated that NPS/NWC/Annapolis are actively pursuing opportunities to move their existing, on-premises IT support infrastructures to an off-premises infrastructure built upon Amazon Web Services.  The NPS reps seemed surprised that AFIT was not pursuing similar cloud solutions.  
+
+A similar conversation occurred with Lt Col _stuff_ from USAFA.  He stated that Lt Gen Bender was also pushing to implement 'cloud-based solutions as far as possible.' 
+
+## 0800 - 0850 It's a Matter of Principles (Pearson)
+
+Delivering and accessing content
+
+ASU ILUX Innovative learning user experience
+
+market sustainability
+
+Seems to focus on how to learn - BUT AVOIDS DISCUSSING WHAT 
+
+Intelligent tutor
+
+EEG observations from many students show lowest benefit and engagement for watching videos when compared to written paper and interactive websites
+
+## 0910 - 1000 Improving tech literacy training
+
+### Objectives
+
+1) Eval tech training status
+
+2) How to develop a sustainable program
+
+3) Defining your content and audience
+
+4) Hw to strategically market and promote your event
+
+5) How to implement
+
+
+Use media, email for strategic reasons
+
+passport to technology
+
+tech in 20 - tech Tuesdays
+
+analytics
+
+review of how faculty use video, or other media
+
+faculty tech institute
+
+hands on tech - hottest tech trends
+
+## Update our blended learning
+
+Dr. Robert Atkinson runs the Innovative Learner and User Experience ([ILUX](http://ilux.lab.asu.edu)) lab at Arizona State University.  Dr. Atkinson uses medical-grade devices to monitor brain wave activity (EEG) and eye movement (eye-trackers) to assess the level of learner engagement.  ILUX study participants review the same content presented in three diffent formats: reading written material, watching a video, and reviewing an interactive website.  The levels of engagement recorded for each learning style were then compared to the participants performance on a test to assess their level of learning.  The level of a participants engagement correlated directly with their performance on the learning assessent.  Unsurprisingly, learing from an interactive website provided a far higher level of engagement and learning compared to what was shown for written materials or for watching videos.  What was interesting was that Dr. Atkinson's results showed a significantly higher level of engagement and learning when participants learned from reviewing written materials that was observed from wathcing a video.

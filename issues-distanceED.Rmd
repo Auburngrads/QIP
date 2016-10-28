@@ -44,12 +44,18 @@ What was missing, many students complained, was a human connection beyond the st
 summary(cars)
 ```
 
-## Including Plots
+## Content types
 
-You can also embed plots, for example:
+- At the undergraduate-level, instruction is largely focused on providing content for the students to consume.  At the graduate-level, instructors are focused not only on presenting content for their students to consume, but presenting tools for their students to produce their own content in the form or a thesis or dissertation.
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+Text
+Typesetting Equations
+Creating publication quality figures & tables
+programming code
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+Most of the LMS currently available are both student & content agnostic 
+
+A core principle of the UDL concept states that content should be presented such that it is accessible to all.  As #### notes, this concept is observed in the way buildings are designed to ensure accessibility for all.  However, this principle can also be allied to the types of content.
+
+Universal Design for Instruction
+

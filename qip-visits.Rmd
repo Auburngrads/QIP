@@ -1,0 +1,202 @@
+---
+title: "AFIT Quality Improvement Project School Visits"
+author: 'Maj Jason Freels'
+output: 
+  flexdashboard::flex_dashboard:
+    storyboard: true
+runtime: shiny
+---
+
+```{r include=FALSE, eval=FALSE}
+wb      <- XLConnect::loadWorkbook('school_visit_list.xlsx')
+
+data    <- XLConnect::readWorksheet(wb, 'sheet1')
+oh.data <- XLConnect::readWorksheet(wb, 'sheet2')
+```
+
+```{r, eval=FALSE}
+school <- mapply(FUN = function(x,y) { paste(c(x, y), collapse = ', ')}, 
+                 x = data$School, 
+                 y = data$Location )
+
+oh.school <- mapply(FUN = function(x,y) { paste(c(x, y), collapse = ', ')}, 
+                    x = oh.data$School, 
+                    y = oh.data$Location )
+
+locations <- ggmap::geocode(school)
+oh.locations <- ggmap::geocode(oh.school)
+```
+
+```{r, eval=FALSE}
+Schools <- data.frame(School    = locations[,1],
+                      Longitude = locations[,2],
+                      Latitude  = locations[,3],
+                      Visit     = data$Visit,
+                      Criteria  = data$Criteria,
+                      Icon      = data$Icon,
+                      Short     = data$Short,
+                      stringsAsFactors = FALSE)
+
+oh.Schools <- data.frame(School    = oh.locations[,1],
+                         Longitude = oh.locations[,2],
+                         Latitude  = oh.locations[,3],
+                         Visit     = oh.data$Visit,
+                         Criteria  = oh.data$Criteria,
+                         Icon      = oh.data$Icon, 
+                         stringsAsFactors = FALSE)
+
+write.table(Schools,    file = 'qip-visits.txt')
+write.table(oh.Schools, file = 'qip-visits-oh.txt')
+```
+
+
+```{r, eval=FALSE}
+## Build the OH School Headings
+for(i in 1:nrow(oh.schools)) {
+  cat(paste(c("### <img src='",oh.schools$Icon[i],"' height='100px' width='100px'> ", schools$Short,'\n\n'), collapse = ''))
+}
+
+## Build the Other Schools Headings
+for(i in 1:nrow(schools)) {
+  cat(paste(c("### <img src='",schools$Icon[i],"' height='100px' width='100px'> ",schools$Short[i],'\n\n\n'), collapse = ''))
+}
+```
+
+### Overview of Vist Plan
+
+```{r}
+schools    <- read.table('qip-visits.txt', 
+                         header = T, 
+                         stringsAsFactors = F)
+oh.schools <- read.table('qip-visits-oh.txt', 
+                         header = T, 
+                         stringsAsFactors = F)
+
+library(leaflet)
+library(flexdashboard)
+
+shinyApp(options = list(height = '700px'),
+  ui = fluidPage(mainPanel(leafletOutput('qip', height = '700px'), width = 12)),
+  server = function(input, output, session) {
+    
+    output$qip <- renderLeaflet({
+      
+m <- leaflet()
+m <- addTiles(m)
+m <- addMarkers(m, 
+                lng = schools$Lon, 
+                lat = schools$Lat,
+                popup = paste('<center><big><b>',
+                              schools$School,
+                              '</b></big></center><hr/><pre>',
+                              '  Visit Date: ', schools$Visit, '<br/>',
+                              'Criteria Met: ', schools$Criteria,'</pre>',
+                              sep = ''),
+                icon = icons(iconUrl = schools$Icon, iconHeight = 70, iconWidth = 70), 
+                options = markerOptions(riseOnHover = TRUE, riseOffset = 500))
+m <- setView(map = m, lat = 39.000585, lng = -96.59181, zoom = 5)
+m
+})
+})
+```
+
+### <img src='images/gatech.gif' height='100px' width='100px'> Georgia Tech
+
+
+### <img src='images/mit.gif' height='100px' width='100px'> MIT
+
+
+### <img src='images/iowa.gif' height='100px' width='100px'> Iowa
+
+
+### <img src='images/uwi.png' height='100px' width='100px'> Wisconsin
+
+
+### <img src='images/sit.gif' height='100px' width='100px'> Stevens
+
+
+### <img src='images/poly.jpg' height='100px' width='100px'> NYU Tech
+
+
+### <img src='images/njit.gif' height='100px' width='100px'> NJIT
+
+
+### <img src='images/mtsu.jpg' height='100px' width='100px'> Montana State
+
+
+### <img src='images/nmu.gif' height='100px' width='100px'> New Mexico
+
+
+### <img src='images/mu.gif' height='100px' width='100px'> Marshall
+
+
+### <img src='images/erau.png' height='100px' width='100px'> Embry-Riddle
+
+
+### <img src='images/zona.gif' height='100px' width='100px'> Arizona
+
+
+### <img src='images/usma.png' height='100px' width='100px'> West Point
+
+
+### <img src='images/dau.gif' height='100px' width='100px'> DAU
+
+
+### <img src='images/latech.gif' height='100px' width='100px'> Louisiana Tech
+
+
+### <img src='images/msu.gif' height='100px' width='100px'> Michigan State
+
+
+### <img src='images/ncstate.gif' height='100px' width='100px'> NC State
+
+
+### <img src='images/usc.png' height='100px' width='100px'> Southern Cal
+
+
+### <img src='images/vatech.gif' height='100px' width='100px'> Virgina Tech
+
+
+### <img src='images/rochester.png' height='100px' width='100px'> Rochester
+
+
+### <img src='images/utexas.gif' height='100px' width='100px'> Texas
+
+
+### <img src='images/ttu.png' height='100px' width='100px'> Texas Tech
+
+
+### <img src='images/cornell.gif' height='100px' width='100px'> Cornell
+
+
+### <img src='images/ucf.gif' height='100px' width='100px'> Central Florida
+
+
+### <img src='images/psu.gif' height='100px' width='100px'> Penn State
+
+
+### <img src='images/gwu.gif' height='100px' width='100px'> Geoge Washington
+
+
+### <img src='images/uwa.gif' height='100px' width='100px'> Washington
+
+
+### <img src='images/usafa.png' height='100px' width='100px'> Air Force Academy
+
+
+### <img src='images/usna.gif' height='100px' width='100px'> Naval Academy
+
+
+### <img src='images/ill.gif' height='100px' width='100px'> Illinois - Champaign-Urbana
+
+
+### <img src='images/dsu.png' height='100px' width='100px'> Daytona State
+
+
+### <img src='images/stanford.gif' height='100px' width='100px'> Stanford
+
+
+### <img src='images/rose.gif' height='100px' width='100px'> Rose-Hulman
+
+
+### <img src='images/asu.gif' height='100px' width='100px'> Arizona State

@@ -1,0 +1,107 @@
+---
+title: "Untitled"
+author: "Bradley R. Boehmke and Jason K Freels"
+date: "August 26, 2016"
+output: html_document
+---
+
+```{r include=FALSE}
+wb      <- XLConnect::loadWorkbook('school_visit_list.xlsx')
+
+data    <- XLConnect::readWorksheet(wb, 'sheet1')
+oh.data <- XLConnect::readWorksheet(wb, 'sheet2')
+
+school <- mapply(FUN = function(x,y) { paste(c(x, y), collapse = ', ')}, 
+                 x = data$School, 
+                 y = data$Location )
+
+oh.school <- mapply(FUN = function(x,y) { paste(c(x, y), collapse = ', ')}, 
+                    x = oh.data$School, 
+                    y = oh.data$Location )
+
+   locations <- ggmap::geocode(school)
+oh.locations <- ggmap::geocode(oh.school)
+
+Schools <- data.frame(School    = locations[,1],
+                      Longitude = locations[,2],
+                      Latitude  = locations[,3],
+                      Visit     = data$Visit,
+                      Criteria  = data$Criteria,
+                      Icon      = data$Icon, 
+                      stringsAsFactors = FALSE)
+
+oh.Schools <- data.frame(School    = oh.locations[,1],
+                         Longitude = oh.locations[,2],
+                         Latitude  = oh.locations[,3],
+                         Visit     = oh.data$Visit,
+                         Criteria  = oh.data$Criteria,
+                         Icon      = oh.data$Icon, 
+                         stringsAsFactors = FALSE)
+
+write.table(Schools,    file = 'qip-visits.txt')
+write.table(oh.Schools, file = 'qip-visits-oh.txt')
+
+   schools <- read.table(   'qip-visits.txt', header = T, stringsAsFactors = F)
+oh.schools <- read.table('qip-visits-oh.txt', header = T, stringsAsFactors = F)
+
+library(leaflet)
+```
+
+## OH Dashboard
+
+```{r}
+m <- leaflet()
+m <- addTiles(m)
+m <- addMarkers(m, 
+                lng = schools$Lon, 
+                lat = schools$Lat,
+                popup = paste('<center><big><b>',
+                              schools$School,
+                              '</b></big></center><hr/><pre>', 
+                              '  Visit Date: ', schools$Visit, '<br/>', 
+                              'Criteria Met: ', schools$Criteria,'</pre>',
+                              sep = ''),
+                icon = icons(iconUrl = schools$Icon, 
+                             iconHeight = 70, 
+                             iconWidth = 70), 
+                options = markerOptions(riseOnHover = TRUE, riseOffset = 500))
+m <- setView(map = m, 
+             lat = 40.580585, 
+             lng = -96.59181, 
+             zoom = 5)
+m
+```
+
+## U. S. Dashboard
+
+```{r echo=FALSE}
+m <- leaflet()
+m <- addTiles(m)
+m <- addMarkers(m, 
+                lng = schools$Lon, 
+                lat = schools$Lat,
+                popup = paste('<center><big><b>',
+                              schools$School,
+                              '</b></big></center><hr/><pre>', 
+                              '  Visit Date: ', schools$Visit, '<br/>', 
+                              'Criteria Met: ', schools$Criteria,'</pre>',
+                              sep = ''),
+                icon = icons(iconUrl = schools$Icon, iconHeight = 70, iconWidth = 70), 
+                options = markerOptions(riseOnHover = TRUE, riseOffset = 500))
+m <- setView(map = m, lat = 40.580585, lng = -96.59181, zoom = 5)
+m
+```
+
+## Make files
+
+```{r}
+for(i in 1:nrow(oh.schools)) {
+  cat(paste(c("### <img src='",oh.schools$Icon[i],"' height='100px' width='100px'> ", schools$Short,'\n\n'), collapse = ''))
+}
+```
+
+```{r}
+for(i in 1:nrow(schools)) {
+  cat(paste(c("### <img src='",schools$Icon[i],"' height='100px' width='100px'> ",schools$Short,'\n\n\n'), collapse = ''))
+}
+```

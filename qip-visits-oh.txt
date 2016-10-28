@@ -1,0 +1,6 @@
+"School" "Longitude" "Latitude" "Visit" "Criteria" "Icon"
+"1" "Case Western University" -81.6943605 41.49932 "OH" "3(c,d,e)" "images/cwru.gif"
+"2" "University of Cincinnati" -84.5706306 39.1461525 "OH" "3(b,c,e)" "images/uc.gif"
+"3" "University of Dayton" -84.180085 39.7405392 "OH" "2(c,e)" "images/ud.gif"
+"4" "Wright State University" -84.0679451 39.7807838 "OH" "2(c,e)" "images/wsu.png"
+"5" "Ohio State University" -83.0227103 39.9993865 "OH" "2(c,e)" "images/osu.gif"
