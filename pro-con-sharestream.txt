@@ -1,0 +1,19 @@
+Simple, Streamlined Workflow for Content Ingestion
+
+ShareStream’s uploader makes it easy to ingest, tag, transcode and publish media files to folders in the ShareStream Platform. In one simple step, users are able to upload media files directly to the locations in the ShareStream Platform for which they have privileges. In order to simplify the content-ingestion process for users, ShareStream’s uploader provides:
+
+
+Advanced Features for Media Specialists, Techologists, and Superusers
+
+For administrative users, such as media specialists, digital librarians and instructional designers, ShareStream provides an array of advanced features for content ingestion and media transcoding, including:
+
+• the ability to create custom transcoding profiles
+• one-step drag-and- drop bulk upload over SFTP
+• REST APIs for all functions in the content ingestion process, which can be leveraged to automate publishing media content to ShareStream from third-party web conferencing and lecture capture solutions.
+
+
+
+Seamless Integration With Closed Captioning Services
+
+
+The ShareStream Platform’s integration with closed captioning services is available directly from ShareStream’s uploader. Users simply select a checkbox in the uploader’s user interface to send all media files in a batch to a captioning service (or a checkbox for an individual file in the batch to send only a particular file in a batch to a captioning service). Users are also able to upload local caption files for media assets conveniently from the ShareStream uploader

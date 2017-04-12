@@ -1,0 +1,211 @@
+---
+title: "Overview of E-Learning Technologies"
+subtitle: 'AFIT QIP - External Discovery Sub-Committee'
+author: "Jason K Freels"
+date: "December 30, 2016"
+output: slidy_presentation
+---
+
+<style>
+.main-container { max-width: 1600px; }
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# E-Learning Technologies for Graduate Education
+
+## Overview
+
+AFIT was tasked by the Higher Learning Commission (HLC) to complete a quality improvement project (QIP).  The purpose of the QIP was to identify ways in which the institute could improve its educational processes.
+
+Two committees were established to perform this analysis
+
+- An internal committee to examine how AFIT faculty are delivering educational content 
+
+- An external committee to examine how other academic institutions are delivering their educational content
+
+These committees focused on five primary areas for improvement
+
+- Faculty development
+
+- Classroom design
+
+- e-Learning technologies
+
+- number 4
+
+- number 5
+
+For each of these areas, the AFIT QIP external committee reviewed products & techniques that could be employed at AFIT
+
+The external committee was then asked to consolidate their findings into a rank-ordered of improvement opportunities that could provide the greatest benefit to the institute
+
+This persentation outlines the rank-ordered list of e-Learning technologies that if used could greatly benefit the AFIT faculty. 
+
+# <a target=' ' href="https://www.box.com/">Box</a>
+
+## Overview
+
+Box is an online file-sharing, storage and collaboration service provider that caters to individual users as well as businesses.
+
+- Like Dropbox and Google Drive, Box allows users to colloaborate on documents regardless of where they are in the world
+
+- Unlike Dropbox and Google Drive, Box is focused on the enterprise with increased security and colloboration features.
+
+- Box also provides a deep integration with the Canvas LMS.  Many institutions who have switched from Blackboard to Canvas also use Box to allow collaboration between faculty both within their home institution and across institutions that use Box
+
+- The Box-Canvas integration also allows for single sign access.  Users can have their Box and Canvas accounts established at the same and can access Box from within Canvas - without logging into another account.
+
+## Implementation Costs and Timeline
+
+- <a target=' ' href='mailto:natashas@box.com'>Natasha Srinivasan</a> is a Box account exective who has been the primary point of contact in exploring options for implementing at AFIT.
+
+- A semi-formal quote was requested on `r format(as.POSIXct.Date(17178), "%d %B %Y")` to implement Box at AFIT/AU for 400 faculty members (this includes AU)
+
+- When this information is received it will be passed on
+
+## Final Notes
+
+- Several external institutions were asked 'What one e-Learning technology could you not live without'.  Each institution noted that some sort of file collaboration was the most critical eLearning tool.   
+
+# <a target=' ' href="https://slack.com/">Slack</a>
+
+## Overview
+
+- Slack is a communication and file sharing site for teams
+
+- 
+
+
+## Graduate Education is Different
+
+- Many e-learning technologies are available 
+
+- Until recently, most of these technologies targeted K-12
+
+- Most of the content structures used in K-12 education are the same as those used in graduate education
+
+- However, the content graduate e
+
+## Overview
+
+In the ideal case, every instructor's teaching content would exist in .txt files.  These files are light and fast and can be rendered into multiple document and presentation formats and can be used by other instructors in their courses.  The primary output format would be HTML as many types of interactive content can be included in HTML documents & presentations
+
+- Interactive plots and tables
+
+- Videos
+
+- Quizzes & online surveys
+
+However, expecting the AFIT faculty to move their existing content over to this type of infrastructure is unrealistic.  So, in evaluating e-learning technologies I keep the ideal situation in mind while also trying to address the current needs of the AFIT faculty as expressed in the summary provided by the QIP internal subcommittee.   
+
+- A lot of e-learning tools/apps/technologies are available for to help instructors and students synthesize course materal.  
+
+- In this presentation, several e-learning tools are reviewed on the basis of the tool's value for use at AFIT. 
+
+- This review <focus>does not</focus> take into account whether a tool is likely to get approved for use at AFIT
+
+## Observed common threads
+
+- After reviewing many of these tools, some easily observed common threads are that each tool is designed to be interactive and web-based.  One common thread that may not be so easily observed is that nearly all of these tools create elements that can easliy be used in an HTML5 document or presentation.
+
+- Moving forward e-learning technologies should help instructors use content within a HTML documents & presentations the g
+
+# Communication/Collaboration
+
+## Slack <a target=' ' href='https://slack.com/'>Link</a>
+
+<iframe src="https://slack.com/" width="100%" height="1000px"></iframe>
+
+# File Sharing
+
+## Crocodoc <a target=' ' href='https://crocodoc.com/'>Link</a>
+
+<iframe src="https://crocodoc.com/" width="100%" height="1000px"></iframe>
+
+# Communication Technologies
+
+## Zoom
+
+## Slack
+
+
+# File Sharing & Storage
+
+## Github
+
+## Google G Suite
+
+
+# Video Content
+
+## Canvas ARC
+
+## 3Play
+
+## ShareStream
+
+## Yula
+
+## Zoom
+
+# Other Stuff
+
+## zyBooks
+
+- zyBooks produces interactive textbooks that are quite engaging.  The books cover several advanced topics yet specialized
+
+- Auto graded assignments
+
+- This is a model that should be emulated
+
+    - While this should be presented as an option to the faculty for use in their courses I don't know if this should be considered as an option for AFIT as a whole  
+    
+
+    + Only a few courses are available
+
+
+Institute for teaching learning
+UCAT - video teachers teaching for improving
+endorsements for taking training in new teaching techniques
+Peer evaluations - check out vetMed set up
+End of program exit
+assiging faculty mentors
+
+affordability - tuition
+
+itextbooks - 
+
+
+## OSU eLearning
+
+Robert Griffiths & Liv ________________
+Associate Vice Presidents, Office of Distance Education and eLearning
+
+Office of Distance Education and eLearning Established in 2012
+
+Reviewed several LMS solutions downselected to: Bb, D2L, and Canvas
+
+Chose Canvas for many reasons, mainly
+
+- Mobile experiences 
+
+- Data reachback
+
+
+OSU is part of a content creation community called UNIZIN.org
+
+digitalbookshelf.osu.edu - OSU is encouraging faculty to create their own textbooks to reduce costs for students.  Faculty had been using ibooks to author books,
+Now faculty is using pressbooks.com
+
+mosaic program
+
+integrated
+
+Robert Smith - Vice Provost 
+
+HLC Reviewer
+
+Access-Success-Completion

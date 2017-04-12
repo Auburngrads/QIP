@@ -1,0 +1,55 @@
+---
+title: "Big Data Science For Wizards, Not Muggles"
+author: "Major Jason Freels"
+date: "Air Force Institute of Technology"
+output: pdf_document
+---
+
+# Problem Background
+
+Data science is a process whereby data are analyzed to gain understanding and communicated to make sound decisions.  But, at many levels of the U.S. government the data science process has become broken - and then set on fire.  One reason for this is that government agencies oten rely on closed-source, proprietary  software tools that prevent communication with agencies that do not use the same closed-source, proprietary tools.  As result, these __muggles__ are limited to creating static documents and presentations that don't allow their readers to interact with them and then hide how each result was reached. What's worse, these muggles use an unneccesarily slow and tiresome workflow and have no traceability to who made what change and when.    
+
+because much of the gover data often the stove-piped  A primary      The way the U.S. government creates and communicatesIn many cases government agencies use the same methods to analyze similar data sets to thereby reach similar decisions. However, it's difficult for these agencies to communicate their methods or results.     On 29 March 2012, President Barack Obama announced the [___Big Data Research and Development Initiative___](https://www.whitehouse.gov/blog/2012/03/29/big-data-big-deal) to help accelerate the pace at which knowledge may be extracted from large and complex data sets. 
+
+While the approach was welcomed, concerns were voiced that the investment was spread across too many areas rather than a cross-cutting effort to join together.    
+
+There are many new technologies emerging to present information in an engaging way but did not. 
+
+Thus, few organizations are participating  ed In his announcement, Thought the President called for an "all hands on deck" effort - there is no way for the right hands to knwo what the left is doing to share analysis approaches allow visualization. communicate across agancies   stressing that academia, industry, and non-profit partners are needed.     Hampered by closed source computer tools that cannot talk to one another usually based on the assumption that they are more secure
+
+
+
+# Idea
+
+instead of looking at a quad-chart Open-source tools exist to streamline the process of turning data in understanding and then into interactive data visualization products allow  
+
+
+# Resource Requirements
+
+
+
+# Metrics
+
+
+
+# Five Critical Next Steps
+
+
+
+# Ideal End State
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+summary(cars)
+```
+
+You can also embed plots, for example:
+
+```{r, echo=FALSE}
+plot(cars)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

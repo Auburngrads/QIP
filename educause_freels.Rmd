@@ -7,25 +7,59 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+ta <- 0
 ```
 
-## Overall Take-Aways
+## EDUCAUSE Conference Overview
 
-EDUCAUSE in an organization supporting the community of IT professionals in higher education - and their customers (students, faculty, and staff).  Given that this community is the audience for the EDUCAUSE conference it is unsurprising that 'Big Data' and 'Data Analytics' are major themes running through the sessions and the vendor exhibits.  
+EDUCAUSE is a nonprofit association whose mission is "to advance higher education through the use of information technology."  The conference is organized by Pearson Education who established the theme for this year's conference as 'Programming for Possible'.  This theme was intended to "highlight how technology is putting access to quality learning experiences within reach of every student in programs across the country."
 
-EDUCAUSE is a BIG conference, with an attendance of over 5000 and offering more than 30 concurrent session during each interval.  The size of the conference size became a detriment to my experience.  Because so many sessions are offerred during each window, presenters don't provide much detail as to what they will be presenting so as to cast a wider net of attendees.  In nearly every session I attended, 10-20% of the attendees left once the details of the presentation became more clear. 
+## Take Away \#`r ta <- ta +1 ; ta` - Bigger Isn't Necessarily Better 
 
-A second take-away is that when it comes to implementing tech in the classroom, there is currently too many choices available.  For this reason many institutions seem to be 'winging-it'.  In one presentation NC State discussed the tech innovations made in their Hunt Library.  While the result has been very successful, the speaker acknowledged that many of their decisions would eventually become restrictions as considerations for tech refresh would need to be made.
+First off, EDUCAUSE is a big conference - with over 4000 attendees and more than 30 speaking events ocurring during each session interval.  For me, the size of the conference was a detriment to my overall experience.  Since attendees had so many sessions to choose during each interval, the presenters often didn't provide much detail of their talk in the session synopsis.  I expect this was done to make their talks attractive to a wider audience of attendees.  As result, many sessions I hoped would be interesting turned out to be more of a sales pitch for a product displayed in the exhibit hall.  Clearly, others shared in this sentiment.  I often saw large groups leave one session, once the details of the presentation became clear, in hopes that another session was more useful. 
 
-In _Session Title_ speakers from across the Univ of California system detailed their issues with providing an integrated set of tools for 'simple' services such as email, calendering, and file sharing and storage.  
+## Take Away \#`r ta <- ta +1 ; ta` - The number of options are overwhelming -  Lots of options for learning tech AU/AFIT Needs To Pick An LMS Carefully
 
-## AFIT is behind the power curve WRT evaluating and implementing tech 
+When it comes to choosing a tech product to use in the classroom, it can seem like there are currently too many choices.
+
+The primary audience for the EDUCAUSE conference are IT professionals who support higher education institutions.  However, there were many attendees who could be considered as IT customers (i.e. faculty, and staff).  Given the conference's primary audience it was unsurprising to see 'Big Data' and 'Data Analytics' as major themes running through the sessions and the vendor exhibits.
+
+## Take Away \#`r ta <- ta +1 ; ta` - AU/AFIT Needs To Pick An LMS Carefully
+
+  I spoke with a lot of companies presenting their products in the Exhibit Hall.  Many of them were 'free-agent' tools, but a large number of products I saw were designed to integrate into a specific LMS.  In the future, these tools may become LMS-agnostic - or one LMS might gain the upper hand when if comes to offering 3^rd party integrations.  Who knows how the LMS fight will end, but right now it's the wild west.
+
+Also, I found it interesting that Blackboard had such a small presence at EDUCAUSE.  Their exhibit booth was tiny compared to that of Canvas, Desire2Learn, and Schoolology.  While Bb currently enjoys a larger user base than these other tools, they didn't seem interested in competing at the world's biggest education IT conference.
+
+## Take Away \#`r ta <- ta +1 ; ta` - Nobody Knows How To Stitch Tools Together
+
+In my discusions, with reps from other institutions I got the impression that many institutions of them are 'winging-it' when it comes to stitching IT tools together.  NC State presented their experience in creating a very-cool tech space within their Hunt Library.  The purpose of the space was to allow faculty and students to test-drive several tech innovations for presenting or creating content.  While the result has been extremely successful, the speaker acknowledged that they did not do a good job of considering tech refresh when designing the space.  Further, she stated that some of their choices were already presenting issues as newer products have become available.  She mentioned that one of her concerns with creating a cutting-edge tech space was that it would lead to the expectation that the space remains cutting-edge - requiring a fast tech refresh cycle.
+
+In another session speakers from across the Univ of California system detailed their issues with 'Bring Your Own Everything' (BYOE). providing an integrated set of tools for 'simple' services such as email, calendering, and file sharing and storage.  
+
+## Take Away \#`r ta <- ta +1 ; ta` - AFIT Is Behind On Evaluating And Implementing Tech 
 
 I was initially unsure about wearing my uniform at EDUCAUSE. But, sticking out like a sore thumb allowed me to connect with representatives from The Air Force Academy (USAFA), Naval Postgraduate School (NPS), West Point and Air University (AU).
 
 As example, I had a great impromptu conversation with Patricia Hirsch, (Director, Contracting & Logistics Management, NPS), Matthew White (Contracting Specialist, NPS), and Anthony __can't remember last name__ (Center for Teaching and Learning, AU).  The NPS representatives stated that NPS/NWC/Annapolis are actively pursuing opportunities to move their existing, on-premises IT support infrastructures to an off-premises infrastructure built upon Amazon Web Services.  The NPS reps seemed surprised that AFIT was not pursuing similar cloud solutions.  
 
 A similar conversation occurred with Lt Col _stuff_ from USAFA.  He stated that Lt Gen Bender was also pushing to implement 'cloud-based solutions as far as possible.' 
+
+## Take Away \#`r ta <- ta +1 ; ta` - Better Blended Learning
+
+A majority of presentations at EDUCAUSE addressed one of two topics
+
+1) How product 'Y' aggregates and displays data to show which students may be struggling and on what topics they're having trouble
+
+2) How my institution used product 'X' to deliver content and improve student engagement
+
+Regarding topic (1) many of the capabilities present in these data visualization tools were also present in several LMS's.  In some cases the features were part of the LMS itself - in other cases the features came as result of a third-party add-on.  Thus, before any recommendation can be made on a tool providing this capability, AU/AFIT needs to first decide on which will be used in the future.  
+
+Regarding topic (2) - content delivery is obviously important.  However, there seems to be an unstated assumption that the type of content for all of the content delivery products I reviewed - the type of content being deivered.  In every presentation and every exhibit regarding some product or some technique to deliver content I noticed the example content was always simple text, with few pictures and a video.  For technical courses, the content to be delivered often includes results from a computer simulation, example code for students repeat or extend the simulation, and mathematical equations.  When I asked the presenters about the ability of their products to deliver this type of additional content, their response were the same - we have to use a video.  
+
+Their responses took on added significance after attending a session led by Pearson Education and Dr. Robert Atkinson entitled to my
+
+Dr. Robert Atkinson runs the Innovative Learner and User Experience ([ILUX](http://ilux.lab.asu.edu)) lab at Arizona State University.  Dr. Atkinson uses medical-grade devices to monitor brain wave activity (EEG) and eye movement (eye-trackers) to assess the level of learner engagement.  ILUX study participants review the same content presented in three diffent formats: reading written material, watching a video, and reviewing an interactive website.  The levels of engagement recorded for each learning style were then compared to the participants performance on a test to assess their level of learning.  The level of a participants engagement correlated directly with their performance on the learning assessent.  Unsurprisingly, learing from an interactive website provided a far higher level of engagement and learning compared to what was shown for written materials or for watching videos.  What was interesting was that Dr. Atkinson's results showed a significantly higher level of engagement and learning when participants learned from reviewing written materials that was observed from wathcing a video.
+
 
 ## 0800 - 0850 It's a Matter of Principles (Pearson)
 
@@ -70,6 +104,3 @@ faculty tech institute
 
 hands on tech - hottest tech trends
 
-## Update our blended learning
-
-Dr. Robert Atkinson runs the Innovative Learner and User Experience ([ILUX](http://ilux.lab.asu.edu)) lab at Arizona State University.  Dr. Atkinson uses medical-grade devices to monitor brain wave activity (EEG) and eye movement (eye-trackers) to assess the level of learner engagement.  ILUX study participants review the same content presented in three diffent formats: reading written material, watching a video, and reviewing an interactive website.  The levels of engagement recorded for each learning style were then compared to the participants performance on a test to assess their level of learning.  The level of a participants engagement correlated directly with their performance on the learning assessent.  Unsurprisingly, learing from an interactive website provided a far higher level of engagement and learning compared to what was shown for written materials or for watching videos.  What was interesting was that Dr. Atkinson's results showed a significantly higher level of engagement and learning when participants learned from reviewing written materials that was observed from wathcing a video.

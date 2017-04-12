@@ -1,0 +1,27 @@
+Slack has some neat features like search and tagging, plus integration with cloud storage like Dropbox
+
+Per-room notification settings: you can turn off notifications for noisy rooms and still keep them on for others
+•Everything is a web page: Slack's mac client is a web page wrapped in Safari, which makes it really powerful. You can play YouTube videos, SoundCloud tracks, and just about anything the browser can play. You can also simply right click, inspect element, and change the css if something is really annoying you
+
+•Search: Slack's search is way better than HipChat's. You can simply type "/s <query>" in the message box to search for something quickly. It even does canonicalization, like "testing -> tests"
+•Emoji: Slack has full emoji support with autocompletion, plus you can switch emoji styles to Google/Twitter style
+•Archive Importing: You can migrate to Slack if you use HipChat/Campfire by importing your logs, but not vice-versa
+•Integrations: Slack already provides a ton of integrations, such as Asana, Phabricator, PagerDuty, GitHub, Google Docs, Dropbox etc.
+•Polish: It seems incredibly polished for such a new product
+•Feedback: You can send feedback from within the client by typing "/feedback [message]". They seem to have a quick turnaround in fixing a number of issues that we noted initially
+•Funding: This isn't really a product feature, but Slack has enough funding that it won't be assimilated into a random company and close shop any time soon
+
+Cons (of Slack)
+•Notifications: The Mac app shows a red dot to indicate unread messages, but it does not obey your notification settings, so you can't lurk in a noisy room without seeing the red dot constantly even if you turn off notifications for that room
+•Poor Readability: One screenful of a HipChat window contains a lot more information than Slack. You can switch to compact mode, but then lack of alignment and colored names interrupt the flow
+•Feature Discovery: Slack has a ton of great features but they are hidden away under various dropdowns and icons. HipChat's features are easier to discover, although in part because there are fewer of them
+•Slackbot: The onboarding/help process in Slack is done via a bot, which is a very uncanny valley experience for most people who would really rather sign up via a single page form than talk to a bot
+•Default Channel: There's always a default channel that everyone must be in. This, combined with the red dot issue, makes the app way too noisy unless you ensure that the default channel isn't used
+
+The activity dashboard is a Yammer-like feed of everything going on in the organization (more or less an intranet). Like Slack, if your name is directly mentioned, you get a red flag or exclamation point next to the message that calls it to your attention.
+
+Every Slack user is well-acquainted with Slackbot. It's your private chat window you can use to send yourself links and try out integrations or GIFs, and it can also answer your questions. Microsoft Teams has two built-in helper bots: T-Bot and WhoBot.
+
+Microsoft Teams brings every app in the cloud-based Microsoft Office 365 suite into Microsoft Teams in custom tab format.
+
+If you click a particular team and select "Add Tab" on the top right-hand side, then you can add Microsoft Word, Excel, Meetings, Notes, OneNoteFree at iTunes Store, Planner, PowerPoint, SharePoint, and a host of other apps as associated tabs with that team which, essentially, replicates the full functionality of the app without leaving Microsoft Teams.
